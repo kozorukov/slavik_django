@@ -1,4 +1,3 @@
-import os
 import re
 
 from twython import Twython
@@ -6,8 +5,8 @@ from typing import List
 
 from twitter.twitter_service.models.twitter_user import TwitterUser
 
-APP_KEY = os.environ['APP_KEY'],
-APP_SECRET = os.environ['APP_SECRET'],
+APP_KEY = 'J7oizhk4hRPxbCfgxbbrwe7FC'
+APP_SECRET = 'S8WJtYPW2jwsAXba5NZOHR4s96VfhppD2F0VpuH6VF9SDuwOrS'
 
 
 def get_twitters_information(str_twitters) -> List[TwitterUser]:
