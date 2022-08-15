@@ -1,0 +1,15 @@
+<form method="post">
+    {% csrf_token %}
+    {{ form }}
+    <button type="submit">OK</button>
+
+    <span>
+        {% for info in information %}
+            <div>username: {{ info.username }}</div>
+            <div>followers: {{ info.followers }}</div>
+            <div>following: {{ info.following }}</div>
+            <div>description: {{ info.description }}</div>
+            <div>----------------</div>
+        {% endfor %}
+    </span>
+</form>
